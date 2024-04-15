@@ -1,0 +1,76 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.about-section {
+    @include gradient;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+
+    
+    
+
+    .about{
+        margin-top: 2rem ;
+        font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+            text-transform: capitalize;
+            
+
+
+        .about_image{
+            border: 0.55rem solid $primary;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+             
+            
+                
+
+          
+        }
+        h3{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        p{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+    }
+    &__boxes{
+        background-color: $gray-400;
+        height: 300px;
+        max-width: 100%;
+        margin-bottom: 2rem;
+        border: 0.25rem solid $dark;
+        border-radius: 15px;
+       text-transform: capitalize;
+       position: relative;
+
+
+       h4 {
+        margin-top: 3rem;
+        font-weight: bold;
+        font-size: 2rem;
+        }
+         span{
+
+
+            i{
+                font-size: 2rem;
+              line-height: 2.5rem;
+              color: $primary;
+            }
+        }
+          p {
+            font-weight: bold;
+            font-size: 2rem;
+
+        }
+    }
+   
+}
+
+

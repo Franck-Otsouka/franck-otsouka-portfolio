@@ -1,0 +1,15 @@
+
+@use 'custom';
+
+//IMPORT SECTIONS
+
+@use 'sections/navbar';
+@use 'sections/intro-section';
+@use 'sections/about';
+@use 'sections/logos';
+@use 'sections/footer';
+@use 'sections/portfolio';
+@use 'components/mixins';
+@use 'components/typography';
+@use 'components/buttons';
+

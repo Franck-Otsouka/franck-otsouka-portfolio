@@ -1,0 +1,68 @@
+
+@use '../custom' as *;
+@use '../components/mixins'as *;
+
+.intro-section{
+    @include gradient;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+             .intros{
+               padding: 50px 8% 0 8%;
+
+
+            .display-2--intro{
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+
+               &__link{
+                color: $primary;
+                font-weight: 900;
+               
+
+                   &:hover {
+                    
+                    color: $dark;
+                   }
+                }
+            }
+
+        
+
+            &__icons {
+               margin: 3rem 2.5rem 0 0;
+
+
+             a {
+                color: $primary;
+
+                &:hover {
+                    filter: grayscale(120);
+                   }
+
+    
+                   i {
+                      font-size: 1.6rem;
+                      padding-right: 2rem;
+                
+    
+                      @include media-breakpoint-up(sm) {
+                       font-size: 2.6rem;
+                            }
+                    }
+                }     
+            
+     
+            } 
+            
+            &__image {
+                border: 0.55rem solid rgba($primary, 0.7);
+                border-radius: 15px;
+                
+                
+    
+            }
+    }    
+
+}
